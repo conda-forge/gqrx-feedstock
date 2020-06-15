@@ -16,7 +16,7 @@ source:
     - 0002-Increase-random-file-size-so-empty-receive-source-wo.patch  # [win]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -65,6 +65,12 @@ test:
     # can't test whether it runs because a display is needed
     - test -f $PREFIX/bin/gqrx  # [not win]
     - if not exist %PREFIX%\\Library\\bin\\gqrx.exe exit 1  # [win]
+
+app:
+  entry: gqrx --edit
+  icon: gqrx-icon.png
+  summary: "Gqrx"
+  type: desk
 
 about:
   home: https://gqrx.dk/
