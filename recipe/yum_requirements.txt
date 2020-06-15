@@ -1,6 +1,7 @@
 mesa-libGL
 mesa-dri-drivers
 libselinux
+libudev
 libX11
 libXcomposite
 libXcursor
