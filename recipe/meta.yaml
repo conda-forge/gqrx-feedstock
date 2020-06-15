@@ -26,6 +26,8 @@ requirements:
     - make  # [not win]
     - ninja  # [win]
     - pkg-config  # [not win]
+   # libudev needed to link against libusb (through gnuradio-osmosdr) on linux
+    - {{ cdt('libudev') }}  # [linux]
    # below are needed to link with Qt for qtgui
     - {{ cdt('libice') }}  # [linux]
     - {{ cdt('libselinux') }}  # [linux]
