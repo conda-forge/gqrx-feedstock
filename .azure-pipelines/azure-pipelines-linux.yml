@@ -25,11 +25,19 @@ jobs:
     displayName: Configure binfmt_misc
 
   - script: |
+        set -e
+
         export CI=azure
         export GIT_BRANCH=$BUILD_SOURCEBRANCHNAME
         .scripts/run_docker_build.sh
+
+        # make sure there is a package directory so that artifact publishing works
+        mkdir -p build_artifacts/linux-64/
     displayName: Run docker build
     env:
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
       FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
       STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
+
+  - publish: build_artifacts/linux-64/
+    artifact: conda_pkgs_$(CONFIG)

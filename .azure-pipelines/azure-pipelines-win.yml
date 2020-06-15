@@ -73,7 +73,12 @@ jobs:
         call activate base
         run_conda_forge_build_setup
       displayName: conda-forge build setup
-    
+
+    - script: |
+        REM make sure there is a package directory so that artifact publishing works
+        setlocal enableextensions
+        if not exist %CONDA_BLD_PATH%\\win-64\\ mkdir %CONDA_BLD_PATH%\\win-64\\
+      displayName: Make artifact dir
 
     # Special cased version setting some more things!
     - script: |
@@ -92,6 +97,10 @@ jobs:
       env:
         PYTHONUNBUFFERED: 1
       condition: not(contains(variables['CONFIG'], 'vs2008'))
+
+    - publish: $(CONDA_BLD_PATH)\\win-64\\
+      artifact: conda_pkgs_$(CONFIG)
+
     - script: |
         call activate base
         validate_recipe_outputs "gqrx-feedstock"
