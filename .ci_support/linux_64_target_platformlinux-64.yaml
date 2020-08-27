@@ -1,13 +1,21 @@
 boost_cpp:
 - '1.72'
 c_compiler:
-- vs2017
+- gcc
+c_compiler_version:
+- '7'
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- vs2017
+- gxx
+cxx_compiler_version:
+- '7'
+docker_image:
+- condaforge/linux-anvil-comp7
+gnuradio_core:
+- 3.8.2
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
@@ -16,4 +24,4 @@ pin_run_as_build:
 qt:
 - '5.12'
 target_platform:
-- win-64
+- linux-64
