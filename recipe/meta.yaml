@@ -1,5 +1,5 @@
 {% set name = "gqrx" %}
-{% set version = "2.12.1" %}
+{% set version = "2.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/csete/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 7c626db9f22c3edbe30299a08f7f549b4f30dd83c883595468029a27c3e8fda9
+  sha256: 10228ac2b0cecc9c72bbe206f57fb9fc40b92e3935f74fa394d0a10dcd9eb1b2
   patches:
     - 0001-Require-CMake-version-3.2.patch
     - 0001-Don-t-build-a-resource-file-for-the-executable-on-Wi.patch  # [win]
@@ -16,7 +16,7 @@ source:
     - 0002-Increase-random-file-size-so-empty-receive-source-wo.patch  # [win]
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -71,7 +71,7 @@ test:
 app:
   entry: gqrx --edit
   icon: gqrx-icon.png
-  summary: "Gqrx"
+  summary: Gqrx
   type: desk
 
 about:
@@ -81,7 +81,7 @@ about:
   license_file:
     - COPYING
     - LICENSE-CTK
-  summary: 'Software defined radio receiver powered by GNU Radio and Qt'
+  summary: Software defined radio receiver powered by GNU Radio and Qt
   description: |
     Gqrx is an open source software defined radio (SDR) receiver implemented using GNU
     Radio and the Qt GUI toolkit. Currently it works on Linux and Mac with hardware
