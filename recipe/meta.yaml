@@ -1,5 +1,5 @@
 {% set name = "gqrx" %}
-{% set version = "2.13.3" %}
+{% set version = "2.13.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/csete/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 347eece092f11dea2a21155156e923b184b28f6a383546593964932a5a68dd91
+  sha256: 79287ba694a7d0506393d2c18cc02fc5c736d00119e0ad7fa1ebc67bbb1059c8
   patches:
     - 0001-Require-CMake-version-3.2.patch
     - 0001-Don-t-build-a-resource-file-for-the-executable-on-Wi.patch  # [win]
