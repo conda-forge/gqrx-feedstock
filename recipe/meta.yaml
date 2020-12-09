@@ -1,5 +1,5 @@
 {% set name = "gqrx" %}
-{% set version = "2.14.2" %}
+{% set version = "2.14.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/csete/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: ec5cf2eab77e1e42931e5397e664cf167b45241f9e2ddecfef1ebae802bbc9bf
+  sha256: 7810151edcea3871da29009273ec7d4f3bdec702a9d0bf34c365b4c136993bd7
   patches:
     - 0001-Don-t-build-a-resource-file-for-the-executable-on-Wi.patch  # [win]
     - 0002-Don-t-build-a-win32-app-instead-of-a-console-app.patch  # [win]
