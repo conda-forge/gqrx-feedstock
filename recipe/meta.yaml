@@ -14,7 +14,7 @@ source:
     - 0001-Increase-random-file-size-so-empty-receive-source-wo.patch  # [win]
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
