@@ -14,7 +14,7 @@ source:
     - 0001-Increase-random-file-size-so-empty-receive-source-wo.patch  # [win]
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
@@ -49,11 +49,6 @@ requirements:
     - pulseaudio  # [linux]
     - qt
     - volk
-    # pulled in by gnuradio-core and linked against, so include explicitly
-    - log4cpp
-  run:
-    # pulled in by gnuradio-core and linked against, so include explicitly
-    - log4cpp
 
 test:
   commands:
@@ -64,7 +59,7 @@ test:
 app:
   entry: gqrx --edit
   icon: gqrx-icon.png
-  summary: Gqrx
+  summary: gqrx
   type: desk
 
 about:
