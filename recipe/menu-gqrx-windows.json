@@ -5,14 +5,14 @@
             {
                 "script": "${PREFIX}/Library/bin/gqrx.exe",
                 "scriptarguments": ["--edit"],
-                "name": "Gqrx",
+                "name": "gqrx",
                 "workdir": "${USERPROFILE}",
                 "icon": "${MENU_DIR}/gqrx.ico"
             },
             {
                 "script": "${PREFIX}/Library/bin/gqrx.exe",
                 "scriptarguments": ["--reset", "--edit"],
-                "name": "Gqrx [reset]",
+                "name": "gqrx [reset]",
                 "workdir": "${USERPROFILE}",
                 "icon": "${MENU_DIR}/gqrx.ico"
             }

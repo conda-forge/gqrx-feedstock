@@ -15,9 +15,6 @@ cmake -G "Ninja" ^
     -DCMAKE_BUILD_TYPE:STRING=Release ^
     -DCMAKE_INSTALL_PREFIX:PATH="%LIBRARY_PREFIX%" ^
     -DCMAKE_PREFIX_PATH:PATH="%LIBRARY_PREFIX%" ^
-    -DBoost_NO_BOOST_CMAKE=ON ^
-    -DMPIR_LIBRARY="%LIBRARY_LIB%\mpir.lib" ^
-    -DMPIRXX_LIBRARY="%LIBRARY_LIB%\mpir.lib" ^
     ..
 if errorlevel 1 exit 1
 

@@ -9,7 +9,6 @@ cd build
 cmake_config_args=(
     -DCMAKE_BUILD_TYPE=Release
     -DCMAKE_INSTALL_PREFIX=$PREFIX
-    -DBoost_NO_BOOST_CMAKE=ON
 )
 
 if [[ $target_platform == linux* ]] ; then
