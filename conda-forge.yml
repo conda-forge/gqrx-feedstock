@@ -3,3 +3,4 @@ bot:
   automerge: true
   abi_migration_branches:
    - maint-3.8
+build_with_mambabuild: true
