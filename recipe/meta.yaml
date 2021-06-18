@@ -46,6 +46,7 @@ requirements:
     - boost-cpp
     - gnuradio-core
     - gnuradio-osmosdr
+    - pybind11
     - pulseaudio  # [linux]
     - qt
     - volk
