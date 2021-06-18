@@ -14,7 +14,7 @@ source:
     - 0001-Increase-random-file-size-so-empty-receive-source-wo.patch  # [win]
 
 build:
-  number: 3
+  number: 4
 
 requirements:
   build:
@@ -46,6 +46,7 @@ requirements:
     - boost-cpp
     - gnuradio-core
     - gnuradio-osmosdr
+    - pybind11
     - pulseaudio  # [linux]
     - qt
     - volk
