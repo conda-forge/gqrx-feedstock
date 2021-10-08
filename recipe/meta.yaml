@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/csete/{{ name }}/archive/v{{ version }}.tar.gz
+  url: https://github.com/gqrx-sdr/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: 69479debc90831d07e9b64480c65f186b6934177c32b5006d0779aa24edc4613
   patches:
     - 0001-Don-t-build-a-resource-file-for-the-executable-on-Wi.patch  # [win]
@@ -84,7 +84,7 @@ about:
     Gqrx can operate as an AM/FM/SSB receiver with audio output or as an FFT-only
     instrument. There are also various hooks for interacting with external application
     using network sockets.
-  dev_url: https://github.com/csete/gqrx
+  dev_url: https://github.com/gqrx-sdr/gqrx
 
 extra:
   recipe-maintainers:
