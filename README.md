@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gqrx-feedstock/
 
 Summary: Software defined radio receiver powered by GNU Radio and Qt
 
-Development: https://github.com/csete/gqrx
+Development: https://github.com/gqrx-sdr/gqrx
 
 Gqrx is an open source software defined radio (SDR) receiver implemented using GNU
 Radio and the Qt GUI toolkit. Currently it works on Linux and Mac with hardware
