@@ -1,8 +1,7 @@
-From 7dbbc7d8062bb564a6225f3eae2f4dab7b9a9907 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ryan Volz <rvolz@mit.edu>
 Date: Wed, 20 May 2020 11:41:55 -0400
-Subject: [PATCH 1/2] Don't build a resource file for the executable on
- Windows.
+Subject: [PATCH] Don't build a resource file for the executable on Windows.
 
 conda-forge is not set up with an RC compiler.
 ---
@@ -10,7 +9,7 @@ conda-forge is not set up with an RC compiler.
  1 file changed, 13 deletions(-)
 
 diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
-index 71f31e0..8269184 100644
+index ef1ede1..9daa04f 100644
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
 @@ -41,19 +41,6 @@ QT5_ADD_RESOURCES(RESOURCES_LIST
@@ -34,5 +33,5 @@ index 71f31e0..8269184 100644
  # Build the program
  add_executable(${PROJECT_NAME} ${${PROJECT_NAME}_SOURCE} ${UIS_HDRS} ${RESOURCES_LIST})
 -- 
-2.25.1
+2.34.1
 

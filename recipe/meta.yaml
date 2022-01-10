@@ -11,7 +11,7 @@ source:
   patches:
     - 0001-Don-t-build-a-resource-file-for-the-executable-on-Wi.patch  # [win]
     - 0002-Don-t-build-a-win32-app-instead-of-a-console-app.patch  # [win]
-    - 0001-Increase-random-file-size-so-empty-receive-source-wo.patch  # [win]
+    - 0003-Increase-zero-file-size-so-empty-receive-source-work.patch  # [win]
 
 build:
   number: 0
