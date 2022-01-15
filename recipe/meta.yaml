@@ -1,5 +1,5 @@
 {% set name = "gqrx" %}
-{% set version = "2.15.2" %}
+{% set version = "2.15.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://github.com/gqrx-sdr/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: c4fc85e6aec257e56e0c2963c5c2f7aa210a8b6df73f7cb4e398ec2f1c9e1d33
+  sha256: 5ae636a2e5d12827d8f6bafdbd713c58c167dd05a96efb3a361d594249d212c1
   patches:
     - 0001-Don-t-build-a-resource-file-for-the-executable-on-Wi.patch  # [win]
     - 0002-Don-t-build-a-win32-app-instead-of-a-console-app.patch  # [win]
     - 0003-Increase-zero-file-size-so-empty-receive-source-work.patch  # [win]
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
