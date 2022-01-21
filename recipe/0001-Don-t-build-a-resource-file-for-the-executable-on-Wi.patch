@@ -9,14 +9,14 @@ conda-forge is not set up with an RC compiler.
  1 file changed, 13 deletions(-)
 
 diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
-index ef1ede1..9daa04f 100644
+index 6e94429..1bf513a 100644
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
-@@ -41,19 +41,6 @@ QT5_ADD_RESOURCES(RESOURCES_LIST
+@@ -40,19 +40,6 @@ QT5_ADD_RESOURCES(RESOURCES_LIST
      ../resources/textfiles.qrc
  )
  
--########################################################################
+-###############################################################################
 -# Resource file - adds an icon to GQRX executable
 -if (WIN32)
 -    set(ICON_SOURCE ${CMAKE_SOURCE_DIR}/resources/icons/gqrx.ico)
@@ -29,7 +29,7 @@ index ef1ede1..9daa04f 100644
 -    list(APPEND RESOURCES_LIST ${RES_FILES})
 -endif(WIN32)
 -
- #######################################################################################################################
+ ###############################################################################
  # Build the program
  add_executable(${PROJECT_NAME} ${${PROJECT_NAME}_SOURCE} ${UIS_HDRS} ${RESOURCES_LIST})
 -- 
