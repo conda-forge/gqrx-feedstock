@@ -8,10 +8,10 @@ Subject: [PATCH] Don't build a win32 app instead of a console app.
  1 file changed, 6 deletions(-)
 
 diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
-index 9daa04f..2934342 100644
+index 1bf513a..3632427 100644
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
-@@ -81,11 +81,5 @@ elseif(NOT Gnuradio_VERSION VERSION_LESS "3.8")
+@@ -84,11 +84,5 @@ else()
      )
  endif()
  
