@@ -14,7 +14,7 @@ source:
     - 0003-Increase-zero-file-size-so-empty-receive-source-work.patch  # [win]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
