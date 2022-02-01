@@ -8,8 +8,11 @@ jobs:
     vmImage: macOS-10.15
   strategy:
     matrix:
-      osx_64_:
-        CONFIG: osx_64_
+      osx_64_gnuradio_extra_pin:
+        CONFIG: osx_64_gnuradio_extra_pin
+        UPLOAD_PACKAGES: 'True'
+      osx_64_gnuradio_extra_pin3.9.5:
+        CONFIG: osx_64_gnuradio_extra_pin3.9.5
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 

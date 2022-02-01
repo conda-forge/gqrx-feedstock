@@ -8,8 +8,11 @@ jobs:
     vmImage: windows-2019
   strategy:
     matrix:
-      win_64_:
-        CONFIG: win_64_
+      win_64_gnuradio_extra_pin:
+        CONFIG: win_64_gnuradio_extra_pin
+        UPLOAD_PACKAGES: 'True'
+      win_64_gnuradio_extra_pin3.9.5:
+        CONFIG: win_64_gnuradio_extra_pin3.9.5
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables:
