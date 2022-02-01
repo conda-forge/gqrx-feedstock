@@ -14,7 +14,7 @@ source:
     - 0003-Increase-zero-file-size-so-empty-receive-source-work.patch  # [win]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -44,7 +44,8 @@ requirements:
   host:
     # boost needed for a few headers separately from gnuradio dep
     - boost-cpp
-    - gnuradio-core
+    - gnuradio-core  # [not gnuradio_extra_pin]
+    - gnuradio-core {{ gnuradio_extra_pin }}.*  # [gnuradio_extra_pin]
     - gnuradio-osmosdr
     # needed while on cos6 sysroot, make sure we get cos6-compatible libusb
     # (this does not add a run_exports for libusb)
