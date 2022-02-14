@@ -50,10 +50,15 @@ requirements:
     # needed while on cos6 sysroot, make sure we get cos6-compatible libusb
     # (this does not add a run_exports for libusb)
     - libusb-cos6  # [linux]
-    - pybind11
+    - pybind11  # [not str(gnuradio_extra_pin).startswith("3.8")]
     - pulseaudio  # [linux]
     - qt
     - volk
+    # pulled in by gnuradio-core and linked against, so include explicitly
+    - log4cpp  # [str(gnuradio_extra_pin).startswith("3.8")]
+  run:
+    # pulled in by gnuradio-core and linked against, so include explicitly
+    - log4cpp  # [str(gnuradio_extra_pin).startswith("3.8")]
 
 test:
   commands:
