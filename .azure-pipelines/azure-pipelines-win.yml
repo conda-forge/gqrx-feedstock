@@ -11,6 +11,9 @@ jobs:
       win_64_gnuradio_extra_pin:
         CONFIG: win_64_gnuradio_extra_pin
         UPLOAD_PACKAGES: 'True'
+      win_64_gnuradio_extra_pin3.8.5:
+        CONFIG: win_64_gnuradio_extra_pin3.8.5
+        UPLOAD_PACKAGES: 'True'
       win_64_gnuradio_extra_pin3.9.5:
         CONFIG: win_64_gnuradio_extra_pin3.9.5
         UPLOAD_PACKAGES: 'True'
