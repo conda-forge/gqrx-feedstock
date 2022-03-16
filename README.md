@@ -5,7 +5,7 @@ Home: https://gqrx.dk/
 
 Package license: GPL-3.0-or-later AND Apache-2.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gqrx-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gqrx-feedstock/blob/main/LICENSE.txt)
 
 Summary: Software defined radio receiver powered by GNU Radio and Qt
 
@@ -32,8 +32,8 @@ Current build status
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=master">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=master">
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main">
           </a>
         </summary>
         <table>
@@ -41,64 +41,85 @@ Current build status
           <tbody><tr>
               <td>linux_64_gnuradio_extra_pin</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=master&jobName=linux&configuration=linux_64_gnuradio_extra_pin" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=linux&configuration=linux_64_gnuradio_extra_pin" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_gnuradio_extra_pin3.8.5</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=master&jobName=linux&configuration=linux_64_gnuradio_extra_pin3.8.5" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=linux&configuration=linux_64_gnuradio_extra_pin3.8.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_gnuradio_extra_pin3.9.5</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=master&jobName=linux&configuration=linux_64_gnuradio_extra_pin3.9.5" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=linux&configuration=linux_64_gnuradio_extra_pin3.9.5" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_gnuradio_extra_pin</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_gnuradio_extra_pin" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_gnuradio_extra_pin3.8.5</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_gnuradio_extra_pin3.8.5" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_gnuradio_extra_pin3.9.5</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_gnuradio_extra_pin3.9.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_gnuradio_extra_pin</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=master&jobName=osx&configuration=osx_64_gnuradio_extra_pin" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=osx&configuration=osx_64_gnuradio_extra_pin" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_gnuradio_extra_pin3.8.5</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=master&jobName=osx&configuration=osx_64_gnuradio_extra_pin3.8.5" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=osx&configuration=osx_64_gnuradio_extra_pin3.8.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_gnuradio_extra_pin3.9.5</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=master&jobName=osx&configuration=osx_64_gnuradio_extra_pin3.9.5" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=osx&configuration=osx_64_gnuradio_extra_pin3.9.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64_gnuradio_extra_pin</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=master&jobName=win&configuration=win_64_gnuradio_extra_pin" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=win&configuration=win_64_gnuradio_extra_pin" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64_gnuradio_extra_pin3.8.5</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=master&jobName=win&configuration=win_64_gnuradio_extra_pin3.8.5" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=win&configuration=win_64_gnuradio_extra_pin3.8.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64_gnuradio_extra_pin3.9.5</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=master&jobName=win&configuration=win_64_gnuradio_extra_pin3.9.5" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=win&configuration=win_64_gnuradio_extra_pin3.9.5" alt="variant">
                 </a>
               </td>
             </tr>
