@@ -15,17 +15,18 @@ source:
 
 build:
   number: 2
+  skip: true  # [(linux and not x86_64) and str(gnuradio_extra_pin).startswith("3.8")]
+  skip: true  # [(osx and not x86_64) and str(gnuradio_extra_pin).startswith("3.8")]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cmake
-    - make  # [not win]
-    - ninja  # [win]
+    - ninja
     - pkg-config  # [not win]
-   # libudev needed to link against libusb (through gnuradio-osmosdr) on linux
-    - {{ cdt('libudev') }}  # [linux]
+   # libudev needed to link against libusb (through gnuradio-osmosdr) on linux CentOS 6
+    - {{ cdt('libudev') }}  # [linux and cdt_name=='cos6']
    # below are needed to link with Qt for qtgui
     - {{ cdt('libice') }}  # [linux]
     - {{ cdt('libselinux') }}  # [linux]
@@ -49,7 +50,7 @@ requirements:
     - gnuradio-osmosdr
     # needed while on cos6 sysroot, make sure we get cos6-compatible libusb
     # (this does not add a run_exports for libusb)
-    - libusb-cos6  # [linux]
+    - libusb-cos6  # [linux and cdt_name=='cos6']
     - pybind11  # [not str(gnuradio_extra_pin).startswith("3.8")]
     - pulseaudio  # [linux]
     - qt
