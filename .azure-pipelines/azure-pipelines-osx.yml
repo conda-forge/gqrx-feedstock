@@ -14,8 +14,8 @@ jobs:
       osx_64_gnuradio_extra_pin3.8.5:
         CONFIG: osx_64_gnuradio_extra_pin3.8.5
         UPLOAD_PACKAGES: 'True'
-      osx_64_gnuradio_extra_pin3.9.5:
-        CONFIG: osx_64_gnuradio_extra_pin3.9.5
+      osx_64_gnuradio_extra_pin3.9.6:
+        CONFIG: osx_64_gnuradio_extra_pin3.9.6
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 
