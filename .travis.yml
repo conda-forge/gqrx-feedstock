@@ -12,7 +12,7 @@ matrix:
       arch: arm64
       dist: focal
 
-    - env: CONFIG=linux_aarch64_gnuradio_extra_pin3.9.5 UPLOAD_PACKAGES=True PLATFORM=linux-aarch64 DOCKER_IMAGE=quay.io/condaforge/linux-anvil-aarch64
+    - env: CONFIG=linux_aarch64_gnuradio_extra_pin3.9.6 UPLOAD_PACKAGES=True PLATFORM=linux-aarch64 DOCKER_IMAGE=quay.io/condaforge/linux-anvil-aarch64
       os: linux
       arch: arm64
       dist: focal
