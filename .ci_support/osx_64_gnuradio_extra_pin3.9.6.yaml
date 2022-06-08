@@ -5,7 +5,7 @@ boost_cpp:
 c_compiler:
 - clang
 c_compiler_version:
-- '12'
+- '13'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -13,7 +13,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '12'
+- '13'
 gnuradio_core:
 - 3.10.2
 gnuradio_extra_pin:
@@ -23,10 +23,8 @@ macos_machine:
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
-  qt:
-    max_pin: x.x
-qt:
-- '5.12'
+qt_main:
+- '5.15'
 target_platform:
 - osx-64
 volk:

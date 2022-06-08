@@ -27,12 +27,10 @@ gnuradio_extra_pin:
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
-  qt:
-    max_pin: x.x
 pulseaudio:
 - '14.0'
-qt:
-- '5.12'
+qt_main:
+- '5.15'
 target_platform:
 - linux-aarch64
 volk:
