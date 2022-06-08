@@ -62,10 +62,14 @@ requirements:
     - log4cpp  # [str(gnuradio_extra_pin).startswith("3.8")]
 
 test:
+  requires:
+    - coreutils  # [not win]
   commands:
-    # can't test whether it runs because a display is needed
     - test -f $PREFIX/bin/gqrx  # [not win]
     - if not exist %PREFIX%\\Library\\bin\\gqrx.exe exit 1  # [win]
+    - xvfb-run -a -s "-screen 0 1024x768x24" bash -c 'timeout --preserve-status 10 gqrx -r || [[ $? -eq 143 ]]'  # [linux]
+    - timeout --preserve-status 10 gqrx -r || [[ $? -eq 143 ]]  # [not linux and not win]
+    - start gqrx -r && ping -n 30 127.0.0.1 >nul && taskkill /im gqrx.exe /f  # [win]
 
 app:
   entry: gqrx --edit
