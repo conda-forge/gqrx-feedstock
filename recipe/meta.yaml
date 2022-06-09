@@ -17,6 +17,9 @@ build:
   number: 2
   skip: true  # [(linux and not x86_64) and str(gnuradio_extra_pin).startswith("3.8")]
   skip: true  # [(osx and not x86_64) and str(gnuradio_extra_pin).startswith("3.8")]
+  ignore_run_exports_from:
+    # see below, workaround involving adding python to host
+    - python  # [build_platform != target_platform]
 
 requirements:
   build:
@@ -66,6 +69,8 @@ requirements:
   run:
     # pulled in by gnuradio-core and linked against, so include explicitly
     - log4cpp  # [str(gnuradio_extra_pin).startswith("3.8")]
+    # need python in run so linter doesn't complain b/c also in host
+    - python  # [build_platform != target_platform]
 
 test:
   requires:
