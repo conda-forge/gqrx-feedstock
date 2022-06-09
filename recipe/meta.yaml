@@ -29,7 +29,6 @@ requirements:
     - python                              # [build_platform != target_platform]
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
     - pybind11                            # [build_platform != target_platform and not str(gnuradio_extra_pin).startswith("3.8")]
-    - numpy                               # [build_platform != target_platform]
    # libudev needed to link against libusb (through gnuradio-osmosdr) on linux CentOS 6
     - {{ cdt('libudev') }}  # [linux and cdt_name=='cos6']
    # below are needed to link with Qt for qtgui
