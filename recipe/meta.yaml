@@ -61,6 +61,8 @@ requirements:
     - volk
     # pulled in by gnuradio-core and linked against, so include explicitly
     - log4cpp  # [str(gnuradio_extra_pin).startswith("3.8")]
+    # need python in host for cross-compilation so cross-python will work
+    - python  # [build_platform != target_platform]
   run:
     # pulled in by gnuradio-core and linked against, so include explicitly
     - log4cpp  # [str(gnuradio_extra_pin).startswith("3.8")]
