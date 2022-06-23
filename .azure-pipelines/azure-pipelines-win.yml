@@ -14,8 +14,8 @@ jobs:
       win_64_gnuradio_extra_pin3.8.5:
         CONFIG: win_64_gnuradio_extra_pin3.8.5
         UPLOAD_PACKAGES: 'True'
-      win_64_gnuradio_extra_pin3.9.6:
-        CONFIG: win_64_gnuradio_extra_pin3.9.6
+      win_64_gnuradio_extra_pin3.9.7:
+        CONFIG: win_64_gnuradio_extra_pin3.9.7
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables:
