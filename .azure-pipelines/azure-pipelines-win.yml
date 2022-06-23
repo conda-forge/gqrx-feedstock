@@ -14,8 +14,8 @@ jobs:
       win_64_gnuradio_extra_pin3.8.5:
         CONFIG: win_64_gnuradio_extra_pin3.8.5
         UPLOAD_PACKAGES: 'True'
-      win_64_gnuradio_extra_pin3.9.6:
-        CONFIG: win_64_gnuradio_extra_pin3.9.6
+      win_64_gnuradio_extra_pin3.9.7:
+        CONFIG: win_64_gnuradio_extra_pin3.9.7
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables:
@@ -59,10 +59,12 @@ jobs:
         call activate base
         run_conda_forge_build_setup
       displayName: conda-forge build setup
-    
 
     - script: |
         call activate base
+        if EXIST LICENSE.txt (
+          copy LICENSE.txt "recipe\\recipe-scripts-license.txt"
+        )
         conda.exe mambabuild "recipe" -m .ci_support\%CONFIG%.yaml --suppress-variables
       displayName: Build recipe
       env:

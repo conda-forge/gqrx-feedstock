@@ -14,7 +14,7 @@ source:
     - 0003-Increase-zero-file-size-so-empty-receive-source-work.patch  # [win]
 
 build:
-  number: 2
+  number: 3
   skip: true  # [(linux and not x86_64) and str(gnuradio_extra_pin).startswith("3.8")]
   skip: true  # [(osx and not x86_64) and str(gnuradio_extra_pin).startswith("3.8")]
   ignore_run_exports_from:
