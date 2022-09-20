@@ -53,10 +53,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_gnuradio_extra_pin3.9.7</td>
+              <td>linux_64_gnuradio_extra_pin3.9.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=linux&configuration=linux_64_gnuradio_extra_pin3.9.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=linux&configuration=linux_64_gnuradio_extra_pin3.9.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -67,10 +67,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_gnuradio_extra_pin3.9.7</td>
+              <td>linux_aarch64_gnuradio_extra_pin3.9.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_gnuradio_extra_pin3.9.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_gnuradio_extra_pin3.9.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -88,10 +88,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_gnuradio_extra_pin3.9.7</td>
+              <td>osx_64_gnuradio_extra_pin3.9.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=osx&configuration=osx_64_gnuradio_extra_pin3.9.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=osx&configuration=osx_64_gnuradio_extra_pin3.9.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -102,10 +102,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_gnuradio_extra_pin3.9.7</td>
+              <td>osx_arm64_gnuradio_extra_pin3.9.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_gnuradio_extra_pin3.9.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_gnuradio_extra_pin3.9.8" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -123,10 +123,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_gnuradio_extra_pin3.9.7</td>
+              <td>win_64_gnuradio_extra_pin3.9.8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=win&configuration=win_64_gnuradio_extra_pin3.9.7" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=win&configuration=win_64_gnuradio_extra_pin3.9.8" alt="variant">
                 </a>
               </td>
             </tr>
