@@ -16,16 +16,16 @@ jobs:
         CONFIG: linux_64_gnuradio_extra_pin3.8.5
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_gnuradio_extra_pin3.9.7:
-        CONFIG: linux_64_gnuradio_extra_pin3.9.7
+      linux_64_gnuradio_extra_pin3.9.8:
+        CONFIG: linux_64_gnuradio_extra_pin3.9.8
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_aarch64_gnuradio_extra_pin:
         CONFIG: linux_aarch64_gnuradio_extra_pin
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_aarch64_gnuradio_extra_pin3.9.7:
-        CONFIG: linux_aarch64_gnuradio_extra_pin3.9.7
+      linux_aarch64_gnuradio_extra_pin3.9.8:
+        CONFIG: linux_aarch64_gnuradio_extra_pin3.9.8
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
   timeoutInMinutes: 360

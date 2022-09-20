@@ -1,32 +1,38 @@
-MACOSX_DEPLOYMENT_TARGET:
-- '11.0'
+BUILD:
+- aarch64-conda_cos7-linux-gnu
 boost_cpp:
-- 1.74.0
+- 1.78.0
 c_compiler:
-- clang
+- gcc
 c_compiler_version:
-- '13'
+- '10'
+cdt_arch:
+- aarch64
+cdt_name:
+- cos7
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- clangxx
+- gxx
 cxx_compiler_version:
-- '13'
+- '10'
+docker_image:
+- quay.io/condaforge/linux-anvil-cos7-x86_64
 gnuradio_core:
-- 3.10.3
+- 3.10.4
 gnuradio_extra_pin:
-- 3.9.7
-macos_machine:
-- arm64-apple-darwin20.0.0
+- 3.9.8
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
+pulseaudio:
+- '14.0'
 qt_main:
 - '5.15'
 target_platform:
-- osx-arm64
+- linux-aarch64
 volk:
 - '2.5'
 zip_keys:
