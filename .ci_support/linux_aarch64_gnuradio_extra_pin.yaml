@@ -28,7 +28,7 @@ pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
 pulseaudio:
-- '14.0'
+- '16.1'
 qt_main:
 - '5.15'
 target_platform:
