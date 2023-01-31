@@ -14,7 +14,7 @@ source:
     - 0003-Increase-zero-file-size-so-empty-receive-source-work.patch  # [win]
 
 build:
-  number: 7
+  number: 8
   skip: true  # [(linux and not x86_64) and str(gnuradio_extra_pin).startswith("3.8")]
   skip: true  # [(osx and not x86_64) and str(gnuradio_extra_pin).startswith("3.8")]
   ignore_run_exports_from:
@@ -61,7 +61,8 @@ requirements:
     - pybind11  # [not str(gnuradio_extra_pin).startswith("3.8")]
     - pulseaudio  # [linux]
     - qt-main
-    - volk
+    - volk  # [not str(gnuradio_extra_pin).startswith("3.8")]
+    - volk 2.5  # [str(gnuradio_extra_pin).startswith("3.8")]
     # pulled in by gnuradio-core and linked against, so include explicitly
     - log4cpp  # [str(gnuradio_extra_pin).startswith("3.8")]
     # need python in host for cross-compilation so cross-python will work
