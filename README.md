@@ -1,11 +1,11 @@
-About gqrx
-==========
+About gqrx-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gqrx-feedstock/blob/main/LICENSE.txt)
 
 Home: https://gqrx.dk/
 
 Package license: GPL-3.0-or-later AND Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gqrx-feedstock/blob/main/LICENSE.txt)
 
 Summary: Software defined radio receiver powered by GNU Radio and Qt
 
