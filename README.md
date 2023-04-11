@@ -74,6 +74,20 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_ppc64le_gnuradio_extra_pin</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_gnuradio_extra_pin" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_gnuradio_extra_pin3.9.8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gqrx-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_gnuradio_extra_pin3.9.8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_64_gnuradio_extra_pin</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9989&branchName=main">
