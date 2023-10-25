@@ -13,7 +13,7 @@ source:
     - 0002-Don-t-build-a-win32-app-instead-of-a-console-app.patch  # [win]
 
 build:
-  number: 0
+  number: 1
   ignore_run_exports_from:
     # see below, workaround involving adding python to host
     - python  # [build_platform != target_platform]
@@ -32,11 +32,10 @@ requirements:
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
   host:
-    # boost needed for a few headers separately from gnuradio dep
-    - boost-cpp
     - gnuradio-core  # [not gnuradio_extra_pin]
     - gnuradio-core {{ gnuradio_extra_pin }}.*  # [gnuradio_extra_pin]
     - gnuradio-osmosdr
+    - libboost-headers
     - pybind11
     - pulseaudio  # [linux]
     - qt-main
