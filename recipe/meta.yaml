@@ -32,11 +32,10 @@ requirements:
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
   host:
-    # boost needed for a few headers separately from gnuradio dep
-    - libboost-headers
     - gnuradio-core  # [not gnuradio_extra_pin]
     - gnuradio-core {{ gnuradio_extra_pin }}.*  # [gnuradio_extra_pin]
     - gnuradio-osmosdr
+    - libboost-headers
     - pybind11
     - pulseaudio  # [linux]
     - qt-main
