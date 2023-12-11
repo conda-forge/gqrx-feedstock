@@ -15,4 +15,4 @@ qt_main:
 target_platform:
 - win-64
 volk:
-- '3.0'
+- '3.1'
