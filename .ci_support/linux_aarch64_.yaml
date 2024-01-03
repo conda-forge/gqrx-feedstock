@@ -19,7 +19,7 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 gnuradio_core:
-- 3.10.8
+- 3.10.9
 gnuradio_extra_pin:
 - ''
 pulseaudio:
