@@ -1,28 +1,32 @@
 From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
-From: Ryan Volz <rvolz@mit.edu>
-Date: Wed, 20 May 2020 13:13:28 -0400
+From: Ryan Volz <ryan.volz@gmail.com>
+Date: Mon, 12 Feb 2024 12:45:17 -0500
 Subject: [PATCH] Don't build a win32 app instead of a console app.
 
 ---
- src/CMakeLists.txt | 6 ------
- 1 file changed, 6 deletions(-)
+ src/CMakeLists.txt | 10 ----------
+ 1 file changed, 10 deletions(-)
 
 diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
-index 1bf513a..3632427 100644
+index f0dcdb1..0209f66 100644
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
-@@ -84,11 +84,5 @@ else()
+@@ -109,15 +109,5 @@ else()
      )
  endif()
  
 -#build a win32 app, not a console app
 -if (WIN32)
--    set(CMAKE_EXE_LINKER_FLAGS "/entry:mainCRTStartup ${CMAKE_EXE_LINKER_FLAGS}")
+-    if (MSVC)
+-        set(CMAKE_EXE_LINKER_FLAGS "/entry:mainCRTStartup ${CMAKE_EXE_LINKER_FLAGS}")
+-    else()
+-        set(CMAKE_EXE_LINKER_FLAGS "-Wl,-e,mainCRTStartup ${CMAKE_EXE_LINKER_FLAGS}")
+-    endif(MSVC)
 -    set_target_properties(${PROJECT_NAME} PROPERTIES WIN32_EXECUTABLE ON)
 -endif (WIN32)
 -
  set(INSTALL_DEFAULT_BINDIR "bin" CACHE STRING "Appended to CMAKE_INSTALL_PREFIX")
  install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${INSTALL_DEFAULT_BINDIR})
 -- 
-2.34.1
+2.42.0
 

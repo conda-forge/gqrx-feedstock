@@ -1,6 +1,6 @@
 From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
-From: Ryan Volz <rvolz@mit.edu>
-Date: Wed, 20 May 2020 11:41:55 -0400
+From: Ryan Volz <ryan.volz@gmail.com>
+Date: Mon, 12 Feb 2024 12:45:00 -0500
 Subject: [PATCH] Don't build a resource file for the executable on Windows.
 
 conda-forge is not set up with an RC compiler.
@@ -9,12 +9,12 @@ conda-forge is not set up with an RC compiler.
  1 file changed, 13 deletions(-)
 
 diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
-index 6e94429..1bf513a 100644
+index 845b196..f0dcdb1 100644
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
-@@ -40,19 +40,6 @@ QT5_ADD_RESOURCES(RESOURCES_LIST
-     ../resources/textfiles.qrc
- )
+@@ -53,19 +53,6 @@ else()
+     )
+ endif()
  
 -###############################################################################
 -# Resource file - adds an icon to GQRX executable
@@ -33,5 +33,5 @@ index 6e94429..1bf513a 100644
  # Build the program
  add_executable(${PROJECT_NAME} ${${PROJECT_NAME}_SOURCE} ${UIS_HDRS} ${RESOURCES_LIST})
 -- 
-2.34.1
+2.42.0
 
