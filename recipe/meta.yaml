@@ -1,5 +1,5 @@
 {% set name = "gqrx" %}
-{% set version = "2.17.3" %}
+{% set version = "2.17.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/gqrx-sdr/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 7bb7e6a490d7d4669a4d1596ad52f5af08e7167d78117b3d1fd711a368536855
+  sha256: 06be55cd8ccadd3cb08218a4234f94c5c2bcd9e7b63a775650e473115e93d4e7
   patches:
     - 0001-Don-t-build-a-resource-file-for-the-executable-on-Wi.patch  # [win]
     - 0002-Don-t-build-a-win32-app-instead-of-a-console-app.patch  # [win]
 
 build:
-  number: 4
+  number: 0
   ignore_run_exports_from:
     # see below, workaround involving adding python to host
     - python  # [build_platform != target_platform]
