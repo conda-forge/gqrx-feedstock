@@ -23,7 +23,7 @@ gnuradio_core:
 gnuradio_extra_pin:
 - ''
 pulseaudio:
-- '16.1'
+- '17'
 qt_main:
 - '5.15'
 target_platform:
