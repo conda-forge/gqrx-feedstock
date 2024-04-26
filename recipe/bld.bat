@@ -2,7 +2,7 @@ setlocal EnableDelayedExpansion
 @echo on
 
 if not exist "%PREFIX%\Menu" mkdir "%PREFIX%\Menu"
-copy "%RECIPE_DIR%\menu-gqrx-windows.json" "%PREFIX%\Menu"
+copy "%RECIPE_DIR%\gqrx_menu.json" "%PREFIX%\Menu"
 copy "resources\icons\gqrx.ico" "%PREFIX%\Menu"
 
 :: Make a build folder and change to it
