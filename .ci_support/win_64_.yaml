@@ -12,6 +12,8 @@ gnuradio_core:
 - 3.10.11
 gnuradio_extra_pin:
 - ''
+libboost_headers:
+- '1.86'
 qt_main:
 - '5.15'
 target_platform:
