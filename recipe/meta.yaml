@@ -11,6 +11,7 @@ source:
   patches:
     - 0001-Don-t-build-a-resource-file-for-the-executable-on-Wi.patch  # [win]
     - 0002-Don-t-build-a-win32-app-instead-of-a-console-app.patch  # [win]
+    - 0003-cmake-Fix-exporting-gr-rds-symbols.patch
 
 build:
   number: 0
