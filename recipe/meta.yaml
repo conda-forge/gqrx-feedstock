@@ -13,7 +13,7 @@ source:
     - 0002-Don-t-build-a-win32-app-instead-of-a-console-app.patch  # [win]
 
 build:
-  number: 6
+  number: 7
   ignore_run_exports_from:
     # see below, workaround involving adding python to host
     - python  # [build_platform != target_platform]
