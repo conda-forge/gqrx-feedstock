@@ -1,0 +1,32 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Ryan Volz <ryan.volz@gmail.com>
+Date: Fri, 7 Feb 2025 15:42:22 -0500
+Subject: [PATCH] cmake: Fix exporting gr-rds symbols
+
+CMake adds a definition for `gnuradio_RDS_EXPORTS`, but the code was
+recently changed to use `gnuradio_rds_EXPORTS` (no capitalization
+of RDS) instead.
+
+Fixes build with MSVC.
+
+Signed-off-by: Ryan Volz <ryan.volz@gmail.com>
+---
+ CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 9322eb7..ffee76f 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -71,7 +71,7 @@ if(MSVC)
+     add_definitions(-DBOOST_ALL_DYN_LINK)
+ 
+     #export gr-rds symbols
+-    add_definitions(-Dgnuradio_RDS_EXPORTS)
++    add_definitions(-Dgnuradio_rds_EXPORTS)
+ 
+     if ("${MSVC_VERSION}" VERSION_LESS "1900")
+         add_definitions(-D__func__=__FUNCTION__)
+-- 
+2.47.1
+

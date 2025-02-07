@@ -1,5 +1,5 @@
 {% set name = "gqrx" %}
-{% set version = "2.17.5" %}
+{% set version = "2.17.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,14 @@ package:
 
 source:
   url: https://github.com/gqrx-sdr/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: d349185b3016bee7ea8f27d89f21eb65f5321e09590538f37186cdef78bf0ed7
+  sha256: 84bef6f4a55d0259ef9d66c78c0421b325c56bdcd81a0be7ef7a2162d98b7285
   patches:
     - 0001-Don-t-build-a-resource-file-for-the-executable-on-Wi.patch  # [win]
     - 0002-Don-t-build-a-win32-app-instead-of-a-console-app.patch  # [win]
+    - 0003-cmake-Fix-exporting-gr-rds-symbols.patch
 
 build:
-  number: 7
+  number: 0
   ignore_run_exports_from:
     # see below, workaround involving adding python to host
     - python  # [build_platform != target_platform]

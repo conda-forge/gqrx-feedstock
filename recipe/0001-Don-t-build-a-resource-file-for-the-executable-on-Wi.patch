@@ -9,10 +9,10 @@ conda-forge is not set up with an RC compiler.
  1 file changed, 13 deletions(-)
 
 diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
-index 845b196..f0dcdb1 100644
+index cdb6956..2c4b304 100644
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
-@@ -53,19 +53,6 @@ else()
+@@ -52,19 +52,6 @@ else()
      )
  endif()
  
@@ -33,5 +33,5 @@ index 845b196..f0dcdb1 100644
  # Build the program
  add_executable(${PROJECT_NAME} ${${PROJECT_NAME}_SOURCE} ${UIS_HDRS} ${RESOURCES_LIST})
 -- 
-2.42.0
+2.47.1
 
