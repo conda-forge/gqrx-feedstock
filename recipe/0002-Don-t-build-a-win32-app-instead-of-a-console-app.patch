@@ -8,10 +8,10 @@ Subject: [PATCH] Don't build a win32 app instead of a console app.
  1 file changed, 10 deletions(-)
 
 diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
-index f0dcdb1..0209f66 100644
+index 2c4b304..b4cc252 100644
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
-@@ -109,15 +109,5 @@ else()
+@@ -108,15 +108,5 @@ else()
      )
  endif()
  
@@ -28,5 +28,5 @@ index f0dcdb1..0209f66 100644
  set(INSTALL_DEFAULT_BINDIR "bin" CACHE STRING "Appended to CMAKE_INSTALL_PREFIX")
  install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${INSTALL_DEFAULT_BINDIR})
 -- 
-2.42.0
+2.47.1
 
