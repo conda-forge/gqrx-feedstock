@@ -19,7 +19,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '18'
 gnuradio_core:
-- 3.10.11
+- 3.10.12
 gnuradio_extra_pin:
 - ''
 libboost_headers:
