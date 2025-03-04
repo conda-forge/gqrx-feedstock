@@ -14,7 +14,7 @@ source:
     - 0003-cmake-Fix-exporting-gr-rds-symbols.patch
 
 build:
-  number: 0
+  number: 1
   ignore_run_exports_from:
     # see below, workaround involving adding python to host
     - python  # [build_platform != target_platform]
