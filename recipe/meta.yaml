@@ -14,8 +14,9 @@ source:
 
 build:
   number: 3
-  ignore_run_exports_from:
-    # see below, workaround involving adding python to host
+  ignore_run_exports:
+    # see below, workaround for cross-compilation
+    # ignore python specifically b/c its run_export could come from python or cross-python
     - python  # [build_platform != target_platform]
 
 requirements:
@@ -27,7 +28,9 @@ requirements:
     - ninja
     - pkg-config  # [not win]
     # cross-compilation requirements
-    - python                              # [build_platform != target_platform]
+    # (gnuradio needs to find this even though we don't use it)
+    # (specify >= to avoid pin / build matrix and get latest version)
+    - python >={{ python_min }}           # [build_platform != target_platform]
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
     - pybind11                            # [build_platform != target_platform]
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
@@ -41,11 +44,6 @@ requirements:
     - pulseaudio  # [linux]
     - qt-main
     - volk
-    # need python in host for cross-compilation so cross-python will work
-    - python  # [build_platform != target_platform]
-  run:
-    # need python in run so linter doesn't complain b/c also in host
-    - python  # [build_platform != target_platform]
 
 test:
   requires:
