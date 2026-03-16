@@ -6,8 +6,6 @@ c_stdlib:
 - sysroot
 c_stdlib_version:
 - '2.17'
-cdt_name:
-- conda
 channel_sources:
 - conda-forge
 channel_targets:
@@ -26,6 +24,8 @@ libboost_headers:
 - '1.88'
 pulseaudio:
 - '17.0'
+python_min:
+- '3.10'
 qt_main:
 - '5.15'
 target_platform:

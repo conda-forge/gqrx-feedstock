@@ -26,6 +26,8 @@ libboost_headers:
 - '1.88'
 macos_machine:
 - x86_64-apple-darwin13.4.0
+python_min:
+- '3.10'
 qt_main:
 - '5.15'
 target_platform:
