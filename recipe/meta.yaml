@@ -13,7 +13,7 @@ source:
     - 0002-Don-t-build-a-win32-app-instead-of-a-console-app.patch  # [win]
 
 build:
-  number: 2
+  number: 3
   ignore_run_exports_from:
     # see below, workaround involving adding python to host
     - python  # [build_platform != target_platform]
@@ -30,8 +30,6 @@ requirements:
     - python                              # [build_platform != target_platform]
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
     - pybind11                            # [build_platform != target_platform]
-    - {{ cdt('mesa-dri-drivers') }}  # [linux]
-    - {{ cdt('mesa-libgl-devel') }}  # [linux]
   host:
     - gnuradio-core  # [not gnuradio_extra_pin]
     - gnuradio-core {{ gnuradio_extra_pin }}.*  # [gnuradio_extra_pin]
@@ -43,6 +41,7 @@ requirements:
     - volk
     # need python in host for cross-compilation so cross-python will work
     - python  # [build_platform != target_platform]
+    - libgl-devel                    # [linux]
   run:
     # need python in run so linter doesn't complain b/c also in host
     - python  # [build_platform != target_platform]
