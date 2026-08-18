@@ -13,7 +13,7 @@ gnuradio_core:
 gnuradio_extra_pin:
 - ''
 libboost_headers:
-- '1.88'
+- '1.90'
 python_min:
 - '3.10'
 qt_main:
